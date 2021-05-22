@@ -1,0 +1,454 @@
+/*
+  ===================
+    fonts
+  ===================
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+/*
+  ===================
+    mixing
+  ===================
+*/
+/* Animation 
+  @include animation(0,.5s,animation-name,ease)
+*/
+/* Animation keyframe
+  @include keyframe(animation-name){
+    0%{
+      transform .scale(.5);
+    }
+    100%{
+      transform .scale(1.5);
+    }
+  }
+*/
+/*
+  ===================
+    * Reset
+  ===================
+*/
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  ===================
+    * variables
+  ===================
+*/
+/*
+  ===================
+    color
+  ===================
+*/
+/*
+  ===================
+    typography
+  ===================
+*/
+/*
+  ===================
+    position
+  ===================
+*/
+/*
+  ===================
+    * grid system
+  ===================
+*/
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
+
+/*
+  ===================
+    * media query's
+  ===================
+*/
+/*
+  ===================
+    * components
+  ===================
+*/
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+/*
+  ===================
+    * Classes
+  ===================
+*/
+.up {
+  color: #1db489;
+}
+
+.down {
+  color: #dc414c;
+}
+
+.fa-chevron-up {
+  color: #1db489;
+}
+
+.fa-chevron-down {
+  color: #dc414c;
+}
+
+/*
+  ===================
+    * global style
+  ===================
+*/
+body {
+  background-color: #191a24;
+  background-image: url("./images/bg-stars.svg");
+  background-position: bottom;
+  background-size: auto;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100vw;
+  color: white;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+body ul {
+  list-style: none;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  text-transform: capitalize;
+}
+
+main {
+  height: 100%;
+  background: url("./images/pattern-hills.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: auto;
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100VH;
+}
+
+main .container .countdown {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  main .container .countdown {
+    width: 85vw;
+  }
+}
+
+@media (min-width: 768px) {
+  main .container .countdown {
+    width: 70vw;
+  }
+}
+
+@media (min-width: 992px) {
+  main .container .countdown {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .container .countdown {
+    width: 55vw;
+  }
+}
+
+main .container .countdown .title {
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 1.4rem;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  main .container .countdown .title {
+    font-size: 1.6rem;
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  main .container .countdown .title {
+    font-size: 1.96rem;
+  }
+}
+
+@media (min-width: 992px) {
+  main .container .countdown .title {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .container .countdown .title {
+    font-size: 2.3rem;
+  }
+}
+
+main .container .countdown .countdown-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15rem;
+}
+
+main .container .countdown .countdown-content .deadLine-end {
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+@media (min-width: 576px) {
+  main .container .countdown .countdown-content .deadLine-end {
+    padding: 0;
+  }
+}
+
+main .container .countdown .countdown-content .deadLine-end .end {
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fb6087;
+}
+
+@media (min-width: 576px) {
+  main .container .countdown .countdown-content .deadLine-end .end {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 576px) {
+  main .container .countdown .countdown-content {
+    margin-top: 7rem;
+  }
+}
+
+main .container .countdown .countdown-content .days,
+main .container .countdown .countdown-content .hours,
+main .container .countdown .countdown-content .minutes,
+main .container .countdown .countdown-content .seconds {
+  position: relative;
+  background-color: #343650;
+  -webkit-box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+main .container .countdown .countdown-content .days p,
+main .container .countdown .countdown-content .hours p,
+main .container .countdown .countdown-content .minutes p,
+main .container .countdown .countdown-content .seconds p {
+  font-size: 1.8rem;
+  color: #fb6087;
+}
+
+@media (min-width: 576px) {
+  main .container .countdown .countdown-content .days p,
+  main .container .countdown .countdown-content .hours p,
+  main .container .countdown .countdown-content .minutes p,
+  main .container .countdown .countdown-content .seconds p {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  main .container .countdown .countdown-content .days p,
+  main .container .countdown .countdown-content .hours p,
+  main .container .countdown .countdown-content .minutes p,
+  main .container .countdown .countdown-content .seconds p {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  main .container .countdown .countdown-content .days p,
+  main .container .countdown .countdown-content .hours p,
+  main .container .countdown .countdown-content .minutes p,
+  main .container .countdown .countdown-content .seconds p {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .container .countdown .countdown-content .days p,
+  main .container .countdown .countdown-content .hours p,
+  main .container .countdown .countdown-content .minutes p,
+  main .container .countdown .countdown-content .seconds p {
+    font-size: 6rem;
+  }
+}
+
+main .container .countdown .countdown-content .days::before,
+main .container .countdown .countdown-content .hours::before,
+main .container .countdown .countdown-content .minutes::before,
+main .container .countdown .countdown-content .seconds::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -6px;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #191a24;
+  border-radius: 50%;
+}
+
+main .container .countdown .countdown-content .days::after,
+main .container .countdown .countdown-content .hours::after,
+main .container .countdown .countdown-content .minutes::after,
+main .container .countdown .countdown-content .seconds::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -6px;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: #191a24;
+  border-radius: 50%;
+}
+
+main .container .countdown .countdown-content .days .line,
+main .container .countdown .countdown-content .hours .line,
+main .container .countdown .countdown-content .minutes .line,
+main .container .countdown .countdown-content .seconds .line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: #191a24;
+}
+
+main .container .countdown .countdown-content .content {
+  text-align: center;
+  font-size: .5rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-top: 1.5rem;
+  color: white;
+}
+
+@media (min-width: 576px) {
+  main .container .countdown .countdown-content .content {
+    font-size: .77rem;
+  }
+}
+
+main .container .countdown .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .container .countdown .social li {
+  padding: 1rem;
+}
+
+main .container .countdown .social li a:hover i {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  color: #fb6087;
+}
+
+main .container .countdown .social li a i {
+  color: white;
+  font-size: 1.7rem;
+  display: inline-block;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+/*# sourceMappingURL=style.css.map */
